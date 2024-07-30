@@ -1,0 +1,32 @@
+An identifier is a name used to identify a variable, function, array, structure, or any other user-defined item. Identifiers are crucial in C because they give programmers a way to refer to different elements of the program in a readable and understandable manner.
+
+Rules of identifiers:
+
+1] [A-Z, a-z, 0-9, _] : level_1 = "Done"
+2] you can not start with the digit: 1_level - False
+3] white-space are not allowed : first name, total count
+4] special char's are not allowed : @, #, $, %, ^, &, *..., first#name, #movie, @name
+5] it must be unique: test = 2, int test(){}
+6] keywords are not allowed: for, if, true..
+7] it is a case-sensitive: first_name, FirstName, firstname, First_name, FIRSTNAME
+
+What are the common naming conventions used in c programming?
+
+snack_case: first_name, total_sum_of_nums
+camelCase : firstName, lastName
+
+- variables, function....
+
+PascalCase : FirstName, LastName, Bank, BankWithAtm
+
+- Class, Structure, Union...
+
+• Trivial Variables: i,n,c,etc... (Only one letter. If one letter isn't clear, then make it a Local Variable).
+
+
+x = 10
+y = 20
+
+Const Variables: ALL_CAPS.
+
+PI = 3.14
