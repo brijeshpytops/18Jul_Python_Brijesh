@@ -1,0 +1,71 @@
+/*
+Keywords in C are reserved words that have special meanings defined by the language. They are part of the syntax and cannot be used as identifiers (such as variable names, function names, etc.). Keywords are used to perform various operations, define data types, control structures, and more.
+
+Here is a list of keywords in C and their brief descriptions:
+auto: Specifies that the variable has automatic storage duration. It is the default storage class for local variables.
+
+break: Terminates the execution of the nearest enclosing loop or switch statement.
+
+case: Used in switch statements to specify a branch to be executed.
+char: Declares a character variable.
+
+const: Specifies that the value of the variable cannot be changed (it is constant).
+
+continue: Skips the remaining statements in the current iteration of a loop and proceeds with the next iteration.
+
+default: Specifies the default branch in a switch statement if none of the case labels match.
+
+do: Used to start a do-while loop.
+
+double: Declares a variable of double precision floating-point type.
+
+else: Specifies an alternative branch in an if statement.
+
+enum: Declares an enumerated type.
+
+extern: Declares a variable or function that is defined in another file or later in the program.
+
+float: Declares a variable of floating-point type.
+
+for: Starts a for loop.
+
+goto: Transfers control to a labeled statement.
+
+if: Starts an if statement, which executes a block of code if its condition is true.
+
+inline: Suggests that the compiler should attempt to expand the function inline, if possible.
+
+int: Declares an integer variable.
+
+long: Declares a variable of long integer type.
+
+register: Suggests that the variable be stored in a CPU register for faster access.
+
+restrict: Indicates that a pointer is the only reference to the object it points to.
+
+return: Exits from a function and optionally returns a value.
+
+short: Declares a variable of short integer type.
+
+signed: Specifies that a variable is a signed type.
+
+sizeof: Returns the size of a data type or variable in bytes.
+
+static: Specifies that the variable has static storage duration and internal linkage.
+
+struct: Declares a structure type.
+
+switch: Starts a switch statement, which selects one of many code branches to execute.
+
+typedef: Creates a new type name for an existing type.
+
+union: Declares a union type, which can hold different data types in the same memory location.
+
+unsigned: Specifies that a variable is an unsigned type.
+
+void: Specifies that a function does not return a value or that a pointer has no type.
+
+volatile: Indicates that the value of a variable may change at any time, without any action being taken by the code.
+
+while: Starts a while loop.
+*/

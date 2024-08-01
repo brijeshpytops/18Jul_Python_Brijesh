@@ -1,0 +1,30 @@
+/*
+A variable in C is a storage location in memory that is assigned a name (an identifier) and can hold a value. The value stored in a variable can be changed during program execution. Variables are used to store data that can be manipulated and retrieved throughout the program
+
+syntax: 
+
+data_type var_name = value;
+
+Declaration: Before using a variable, it must be declared, specifying its type and optionally its initial value. For example:
+
+int age;
+
+Initialization: Variables can be initialized at the time of declaration. For example:
+
+int age = 30;
+
+Scope: The scope of a variable determines where in the program the variable can be accessed. Variables can have different scopes:
+
+Local variables: Declared inside a function or a block and can only be accessed within that function or block.
+
+Global variables: Declared outside all functions and can be accessed from any function within the program.
+
+Lifetime: The lifetime of a variable refers to the duration for which the variable exists in memory during the execution of the program. Local variables typically have a lifetime confined to the execution of the block or function in which they are declared, while global variables exist for the entire duration of the program's execution.
+
+Naming Rules: Variable names must follow certain rules:
+
+Must begin with a letter or an underscore (_).
+Can contain letters, digits, and underscores.
+Are case-sensitive (e.g., variable and Variable are different).
+Must not be a reserved keyword in C (e.g., int, return).
+*/

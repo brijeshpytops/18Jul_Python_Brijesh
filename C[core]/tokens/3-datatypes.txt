@@ -1,0 +1,66 @@
+/*
+A datatype defines the type of data a variable can hold. Here are the primary data types in C:
+
+Basic Data Types:
+
+int: Used to store integers (whole numbers). (+/-) : int num = 5;
+float: Used to store floating-point numbers (numbers with decimal points). (+/-) float price = 3523.56;
+double: Used to store double-precision floating-point numbers. (+/-) double num = 9.98;
+char: Used to store single characters. char var_name = 'a';
+
+
+Derived Data Types:
+Arrays: Collection of elements of the same type. int arr[5] = {1, 2, 3, 4, 5};
+Pointers: Variables that store the address of another variable.int *ptr;
+int var = 10;
+ptr = &var;
+
+Structures: Collection of different data types. struct Person {
+    char name[50];
+    int age;
+    float salary;
+};
+
+Unions: Similar to structures but share the same memory location.
+union Data {
+    int i;
+    float f;
+    char str[20];
+};
+
+Enumeration:
+
+enum: User-defined data type consisting of integral constants.
+enum week {Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday};
+
+void:
+
+void: Represents the absence of type. Commonly used with functions.
+
+void functionName() {
+    // Function code
+}
+
+
+Modifiers:
+
+Data types can be modified using modifiers:
+
+short ↓
+long ↑
+signed -5
+unsigned 5
+
+unsigned int num = 10;
+short int num2 = 5;
+long double num3 = 9.99;
+
+Storage Classes
+
+C also has storage classes that define the scope, visibility, and lifetime of variables:
+
+auto
+extern
+static
+register
+*/
