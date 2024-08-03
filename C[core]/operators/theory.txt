@@ -1,0 +1,69 @@
+In C programming, operators and operands are fundamental concepts used to perform operations on data.
+
+Operators
+Operators are symbols that tell the compiler to perform specific mathematical, logical, or relational operations on one or more operands. They are classified based on the number of operands they operate on and their functionality. Here are some common types of operators in C:
+
+Arithmetic Operators: Perform arithmetic operations.
+
++ (addition)
+- (subtraction)
+* (multiplication)
+/ (division)
+% (modulus)
+
+Relational Operators: Compare two values and return a boolean result.
+
+== (equal to)
+!= (not equal to)
+> (greater than)
+< (less than)
+>= (greater than or equal to)
+<= (less than or equal to)
+Logical Operators: Perform logical operations.
+
+&& (logical AND)
+|| (logical OR)
+! (logical NOT)
+
+Bitwise Operators: Perform operations on bits.
+
+& (bitwise AND)
+| (bitwise OR)
+^ (bitwise XOR)
+~ (bitwise NOT)
+<< (left shift)
+>> (right shift)
+
+Assignment Operators: Assign values to variables.
+
+= (simple assignment)
++= (add and assign)
+-= (subtract and assign)
+*= (multiply and assign)
+/= (divide and assign)
+%= (modulus and assign)
+
+Unary Operators: Operate on a single operand.
+
+++ (increment)
+-- (decrement)
++ (unary plus)
+- (unary minus)
+! (logical NOT)
+& (address of)
+* (dereference)
+Conditional Operator: Also known as the ternary operator.
+
+?: (ternary conditional)
+Comma Operator: Allows multiple expressions to be evaluated in a single statement.
+
+, (comma)
+Special Operators: Includes operators like sizeof and & (address of).
+
+Operands
+Operands are the values or variables on which the operators perform the operations. In an expression, the operands can be constants, variables, or more complex expressions.
+
+For example, in the expression a + b:
+
++ is the operator.
+a and b are the operands.

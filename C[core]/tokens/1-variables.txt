@@ -28,3 +28,65 @@ Can contain letters, digits, and underscores.
 Are case-sensitive (e.g., variable and Variable are different).
 Must not be a reserved keyword in C (e.g., int, return).
 */
+
+Example : 1
+// variables 
+#include <stdio.h>
+
+int main() {
+    int num1;
+    
+    num1 = 10;
+    
+    printf("%d", num1);
+    return 0;
+}
+
+
+Example - 2:
+
+// variables 
+#include <stdio.h>
+
+int main() {
+    int num1=10, num2=10;
+    float num3 = 3.14;
+    
+    printf("num1 = num2 = %d\nnum3 = %.3f", num1, num3);
+    return 0;
+}
+
+// variables 
+#include <stdio.h>
+
+int main() {
+    int num1, num2;
+    
+    printf("Enter num1 and num2 sep by space: ");
+    scanf("%d %d", &num1, &num2);
+    
+    printf("num1 = %d\nnum2 = %d", num1, num2);
+    return 0;
+}
+
+// variables 
+#include <stdio.h>
+
+int main() {
+    int num1 = 10, num2;
+    num2 = num1;
+    
+    printf("num1 = %d\nnum2 = %d", num1, num2);
+    return 0;
+}
+
+// variables 
+#include <stdio.h>
+
+int main() {
+    int num1 = 10, num2;
+    num2 = num1;
+    num2 = num2 + 20;
+    printf("num1 = %d\nnum2 = %d", num1, num2);
+    return 0;
+}
