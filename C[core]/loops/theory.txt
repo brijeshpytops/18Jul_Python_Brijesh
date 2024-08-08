@@ -1,0 +1,27 @@
+// loops are control structures that allow code to be executed repeatedly based on a condition. There are three primary types of loops in C:
+
+For Loop:
+The for loop is used when the number of iterations is known before entering the loop. It consists of three parts: initialization, condition, and increment/decrement.
+
+syntax:
+for (initialization; condition; increment/decrement) {
+    // Code to be executed
+}
+
+
+While Loop:
+The while loop is used when the number of iterations is not known beforehand and depends on a condition being true.
+
+syntax:
+while (condition) {
+    // Code to be executed
+}
+
+Do-While Loop:
+The do-while loop is similar to the while loop, but it guarantees that the code block is executed at least once before the condition is tested.
+
+syntax:
+
+do {
+    // Code to be executed
+} while (condition);
