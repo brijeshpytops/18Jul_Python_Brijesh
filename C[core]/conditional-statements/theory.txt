@@ -1,0 +1,73 @@
+conditional statements allow you to execute different sections of code based on certain conditions. The main conditional statements in C are if, else if, else, and switch. Here's a brief overview of each:
+
+1] if
+
+syntax:
+
+if (condition){
+    // block of code
+}
+
+2] if else
+
+syntax:
+
+if (condition){
+    // block of code will execute if condition is true
+}else{
+    // block of code will execute if condition is false
+}
+
+3] nested if, if else
+
+syntax:
+
+if (condition-1){
+    if(condition-2){
+        // block of code
+    }
+}
+
+if (condition-1){
+    if(condition-2){
+        // block of code
+    }else{
+        // block of code
+    }
+}else{
+    // block of code 
+}
+
+
+4] if else if ladder
+
+syntax:
+
+if(condition-1){
+    // block of code
+}else if (condition-2){
+    // block of code
+}else if{
+    // block of code
+}...
+else{
+    // block of code
+}
+
+5] switch
+
+switch(expression){
+    case 1:
+        // block of code 
+        break;
+    case 2:
+        // block of code 
+        break;
+    case 3:
+        // block of code 
+        break;
+    default:
+        // block of code
+    
+
+}
