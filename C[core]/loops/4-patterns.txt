@@ -166,7 +166,7 @@ int main() {
         for(int col = 1; col <= row; col++){
             printf("* ", row);
         }
-        for(int col = 1; col < row; col++){
+        for(int col = 1; col <= row; col++){
             printf("* ", row);
         }
        
@@ -396,3 +396,24 @@ int main() {
     
     return 0;
 }
+
+* * * * * * * * *
+*   *   *   *   *
+* * *   *   *   *
+*       *   *   *
+* * * * *   *   *
+*           *   *
+* * * * * * *   *
+*               *
+* * * * * * * * *
+
+* 
+*   
+* * *  
+*       
+* * * * *   
+*           
+* * * * * * *   
+*               
+* * * * * * * * *
+
