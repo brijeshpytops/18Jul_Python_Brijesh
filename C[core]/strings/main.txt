@@ -1,0 +1,267 @@
+
+In C, a string is essentially an array of characters terminated by a special null character, denoted as '\0'. Unlike some other programming languages where strings are more abstract data types, in C, strings are managed using simple arrays of characters. 
+
+Character Array: A string is an array of char elements. Each element of the array holds a single character.
+
+Null Terminator: The end of a string is marked by the null character ('\0'). This character is used to indicate the end of the string and is not part of the string content. For example, the string "hello" in C is stored as an array of characters: {'h', 'e', 'l', 'l', 'o', '\0'}.
+
+String Literals: When you write a string literal in C (e.g., "hello"), the compiler automatically adds the null terminator at the end of the string.
+
+String Operations: Operations on strings in C (like copying, concatenation, comparison) are typically done using functions from the C standard library, such as strcpy, strcat, and strcmp, which are declared in the <string.h> header file.
+
+declare a string:
+char string_name[size];
+
+initialization of a string:
+char string_name[] = "value";
+char string_name[] = {'v', 'a', 'l', 'u', 'e'};
+
+Example: 0 | Access whole elements from the string via for loop
+#include <stdio.h>
+#include <string.h>
+void main()
+{ 
+    char name[100] = "tops technologies pvt. ltd.";
+    
+    int len = strlen(name);
+    
+    // printf("String length is: %d", len);
+    for(int start = 0; start<len; start++){
+        printf("%c\n", name[start]);
+    }
+}
+
+
+
+Example: 1
+#include <stdio.h>
+#include <string.h>
+void main()
+{ 
+  char name[] = "tops technologies";
+  
+  printf("%s", name);
+}
+
+Example: 2
+
+#include <stdio.h>
+#include <string.h>
+void main()
+{ 
+    char name[100];
+  
+    printf("Enter a company name: ");
+    //   scanf("%s", name);
+    fgets(name, sizeof(name), stdin);
+  
+  printf("Company name: %s", name);
+}
+
+Example: 3 | string copying
+#include <stdio.h>
+#include <string.h>
+void main()
+{ 
+    char name[100];
+    char name1[100];
+  
+    printf("Enter a company name: ");
+    //   scanf("%s", name);
+    fgets(name, sizeof(name), stdin);
+    
+    strcpy(name1, name);
+  
+    printf("Company name: %s", name1);
+}
+
+Example: 4| string concatenation
+#include <stdio.h>
+#include <string.h>
+void main()
+{ 
+    char fname[100] = "brijesh";
+    char space[100] = " ";
+    char lname[100] = "gondaliya";
+
+    
+    strcat(fname, space);
+    strcat(fname, lname);
+  
+    printf("Company name: %s", fname);
+}
+
+Example: 5| string comparison
+
+#include <stdio.h>
+#include <string.h>
+void main()
+{ 
+    char fname[100] = "brijesh";
+    // char lname[100] = "Brijesh"; // 32
+    char lname[100] = "crijesh";
+
+    
+    int res = strcmp(fname, lname);
+    
+    printf("%d", res);
+    
+    if (res == 0){
+        printf("Both string are same.");
+    }else{
+        printf("diffrent strings");
+    }
+}
+
+Example: 6| convert char into upper case from lower
+#include <stdio.h>
+#include <string.h>
+void main()
+{ 
+    char name[100] = "tops technologies pvt. ltd.";
+    
+    int len = strlen(name);
+    
+    // printf("String length is: %d", len);
+    for(int start = 0; start<len; start++){
+        printf("%c\n", name[start]-32);
+    }
+}
+
+#include <stdio.h>
+#include <string.h>
+void main()
+{ 
+    char name[100] = "Tops Technologies Pvt. Ltd.";
+    
+    int len = strlen(name);
+    
+    // printf("String length is: %d", len);
+    for(int start = 0; start<len; start++){
+        if (name[start] >= 'A' && name[start] <= 'Z'){
+            printf("%c\n", name[start]);
+            continue;
+        }else{
+            printf("%c\n", name[start]-32);
+        }
+    }
+}
+
+
+#include <stdio.h>
+#include <string.h>
+void main()
+{ 
+    char name[100] = "Tops Technologies Pvt. Ltd.";
+    
+    int len = strlen(name);
+    
+    // printf("String length is: %d", len);
+    for(int start = 0; start<len; start++){
+        if (name[start] >= 'A' && name[start] <= 'Z'){
+            printf("%c", name[start]+32);
+            continue;
+        }else{
+            printf("%c", name[start]-32);
+        }
+    }
+}
+
+strlen()
+
+Description: Computes the length of a string, excluding the null terminator.
+Prototype: size_t strlen(const char *str);
+Usage: size_t len = strlen("example"); // len = 7
+strcpy()
+
+Description: Copies the source string to the destination buffer.
+Prototype: char *strcpy(char *dest, const char *src);
+Usage: strcpy(dest, "source"); // Copies "source" to dest
+strncpy()
+
+Description: Copies up to n characters from the source string to the destination buffer.
+Prototype: char *strncpy(char *dest, const char *src, size_t n);
+Usage: strncpy(dest, "source", 5); // Copies "sourc" to dest
+strcat()
+
+Description: Concatenates (appends) the source string to the end of the destination string.
+Prototype: char *strcat(char *dest, const char *src);
+Usage: strcat(dest, "source"); // Appends "source" to dest
+strncat()
+
+Description: Concatenates up to n characters from the source string to the end of the destination string.
+Prototype: char *strncat(char *dest, const char *src, size_t n);
+Usage: strncat(dest, "source", 5); // Appends "sourc" to dest
+strcmp()
+
+Description: Compares two strings lexicographically.
+Prototype: int strcmp(const char *str1, const char *str2);
+Usage: int result = strcmp("abc", "abd"); // result < 0
+strncmp()
+
+Description: Compares up to n characters of two strings lexicographically.
+Prototype: int strncmp(const char *str1, const char *str2, size_t n);
+Usage: int result = strncmp("abc", "abd", 2); // result = 0
+strchr()
+
+Description: Locates the first occurrence of a character in a string.
+Prototype: char *strchr(const char *str, int c);
+Usage: char *ptr = strchr("example", 'm'); // ptr points to "mple"
+strrchr()
+
+Description: Locates the last occurrence of a character in a string.
+Prototype: char *strrchr(const char *str, int c);
+Usage: char *ptr = strrchr("example", 'e'); // ptr points to last 'e'
+strstr()
+
+Description: Finds the first occurrence of a substring in a string.
+Prototype: char *strstr(const char *haystack, const char *needle);
+Usage: char *ptr = strstr("example", "amp"); // ptr points to "ample"
+strtok()
+
+Description: Tokenizes a string into a series of substrings based on a set of delimiters.
+Prototype: char *strtok(char *str, const char *delim);
+Usage:
+char str[] = "hello,world";
+char *token = strtok(str, ","); // token = "hello"
+while (token != NULL) {
+    printf("%s\n", token);
+    token = strtok(NULL, ","); // token = "world"
+}
+
+sprintf()
+
+Description: Formats and stores a series of characters and values in a string.
+Prototype: int sprintf(char *str, const char *format, ...);
+Usage: sprintf(buffer, "Number: %d", 42); // buffer contains "Number: 42"
+sscanf()
+
+Description: Reads formatted input from a string.
+Prototype: int sscanf(const char *str, const char *format, ...);
+Usage: sscanf("123 456", "%d %d", &a, &b); // a = 123, b = 456
+strspn()
+
+Description: Computes the length of the initial segment of a string consisting only of characters from a set.
+Prototype: size_t strspn(const char *str, const char *accept);
+Usage: size_t len = strspn("abc123", "abc"); // len = 3
+strcspn()
+
+Description: Computes the length of the initial segment of a string consisting only of characters not from a set.
+Prototype: size_t strcspn(const char *str, const char *reject);
+Usage: size_t len = strcspn("abc123", "123"); // len = 3
+strpbrk()
+
+Description: Finds the first occurrence of any character from a set in a string.
+Prototype: char *strpbrk(const char *str, const char *accept);
+Usage: char *ptr = strpbrk("example", "ae"); // ptr points to 'e'
+strdup()
+
+Description: Duplicates a string by allocating memory and copying the string.
+Prototype: char *strdup(const char *str);
+Usage: char *copy = strdup("hello"); // copy contains a new copy of "hello"
+strerror()
+
+Description: Returns a pointer to the textual representation of the current errno value.
+Prototype: char *strerror(int errnum);
+Usage: char *error_message = strerror(errno); // error_message contains a description of the error
+
