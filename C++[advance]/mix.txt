@@ -1,0 +1,155 @@
+1] // stucture of c++
+// documentation section
+// linking section
+// global declaration section
+/// main function
+// sub-function declaration section
+
+
+
+2] set and get inputs, operators
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    // static input
+    int num1 = 10, num2 = 20, num3;
+    num3 = num1 + num2;
+    cout<<"Num3 = "<<num3<<endl;
+    
+    // dynamic input
+    int num4, num5, num6;
+    cout<<"Enter a num4 & num5 sep. by space: ";
+    cin>>num4>>num5;
+    
+    num6 = num4 * num5;
+    cout<<"Num6 = "<<num6;
+    
+}
+
+3] conditional statements
+#include<iostream>
+using namespace std;
+
+int main(){
+    int bal = 10000;
+    
+    int withdrow_bal;
+    
+    cout<<"Enter an amount: ";
+    cin>>withdrow_bal;
+    
+    if(withdrow_bal >= 500){
+        if (withdrow_bal <= bal){
+            cout<<"Your money withdrow successfully."<<endl;
+            cout<<"Now your remaining balance is: "<<bal-withdrow_bal;
+        }else{
+            cout<<"Insufficent balance"<<endl;
+        }
+    }else{
+        cout<<"Withdrow amount must be ₹500+."<<endl;
+    }
+}
+
+
+4] loops 
+
+[dynamic pattern]
+Example-1: num = 3
+* * *
+* 1 *
+* * *
+=====
+* * *
+* 2 *
+* * *
+=====
+* * *
+* 3 *
+* * *
+
+Example-2: num = 5
+* * * * * 
+*       * 
+*   1   * 
+*       * 
+* * * * * 
+=========
+* * * * * 
+*       * 
+*   2   * 
+*       * 
+* * * * * 
+=========
+* * * * * 
+*       * 
+*   3   * 
+*       * 
+* * * * * 
+=========
+* * * * * 
+*       * 
+*   4   * 
+*       * 
+* * * * * 
+=========
+* * * * * 
+*       * 
+*   5   * 
+*       * 
+* * * * * 
+
+
+#include<iostream>
+using namespace std;
+
+void pattern(int num){
+    
+    int flag = num;
+    
+    if (flag % 2 != 0){
+        
+        flag /= 2;
+        flag++;
+        
+        for(int count = 1; count <= num; count++){
+            for(int row = 1; row <= num; row++){
+                for(int col = 1; col <= num; col++){
+                if ((row == flag) && (col == flag)){
+                    cout<<count<<" ";
+                }else{
+                    if (row == 1 || col == 1 || row == num || col == num){
+                        
+                        cout<<"* ";
+                    }else{
+                        cout<<"  ";
+                    }
+                }
+            }
+                cout<<endl;
+            }
+            
+            if (count == num){
+                continue;
+            }else{
+                for(int equal = 1; equal<num*2; equal++){
+                    cout<<"=";
+                }
+                cout<<endl;
+            }
+        }
+    }else{
+        cout<<"Invalid flag."<<endl<<"Please enter a valid flag";
+    }
+    
+}
+
+int main(){
+    while(1){
+        int num;
+        cout<<"Enter a num: ";
+        cin>>num;
+        pattern(num);
+    }
+}
