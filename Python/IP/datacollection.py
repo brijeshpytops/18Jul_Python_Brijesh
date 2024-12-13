@@ -1,3 +1,4 @@
+# Task -1
 technologies = [
     "Python",
     "JavaScript",
@@ -37,3 +38,24 @@ technologies = [
 #     ("Rust/Native", 10, 2, 8, 0),
 #     ("Swift/Native", 10, 2, 8, 0),
 # ]
+
+# https://www.simplilearn.com/tutorials/c-tutorial/c-program-for-prime-numbers#:~:text=A%20natural%20number%20is%20said,prime%20are%20called%20composite%20numbers.
+# Task 2:
+
+# - Count total words in string
+# - Count char how many times occur add in a dictionary with case insensitive
+
+# Python Tech
+
+# {
+#     'p':1,
+#     'y':1,
+#     't':2,
+#     'h':2,
+#     'o':1,
+#     'n':1,
+#     'i':1,
+# }
+
+# Task 3:
+
