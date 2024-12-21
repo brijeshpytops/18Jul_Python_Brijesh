@@ -58,4 +58,15 @@ technologies = [
 # }
 
 # Task 3:
+# string = input("Enter a something: ").lower()
 
+# ch_count = {}
+# unique = ''
+# for ch in string:
+#     if ch not in unique:
+#         unique += ch
+#         ch_count[ch] = string.count(ch)
+
+# print(ch_count)
+
+# print("hello".count('l'))
