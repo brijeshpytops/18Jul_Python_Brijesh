@@ -43,3 +43,23 @@ data = "the kumbhmela conduct in suart."
 # txt = "The rain in Spain"
 # x = re.search("^The.*Spain$", txt)
 # print(x)
+
+# fruits_with_price = [
+#     ("apple", 100),
+#     ("banana", 50),
+#     ("orange", 150),
+#     ("grapefruit", 200),
+#     ("kiwi", 75)
+# ]
+
+# fruits = ''
+# for fruit in fruits_with_price:
+#     fruits += f" {fruit[0]}-{fruit[1]} "
+
+# print(fruits)
+
+# pattern = r'\b\w+-\d+\b'
+
+# res = re.findall(pattern, fruits)
+
+# print(res)
