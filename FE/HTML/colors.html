@@ -1,0 +1,121 @@
+<!-- 
+ 
+1. RGB (Red, Green, Blue)
+-------------------------
+Uses three values ranging from 0 to 255 to define a color.
+Example:
+
+color: rgb(255, 0, 0); /* Pure Red */
+
+2. RGBA (Red, Green, Blue, Alpha)
+---------------------------------
+Similar to RGB but includes an alpha channel for transparency (0 to 1).
+Example:
+
+color: rgba(255, 0, 0, 0.5); /* Red with 50% transparency */
+
+3. HEX (Hexadecimal)
+--------------------
+Uses a #RRGGBB format where each pair represents Red, Green, and Blue in hexadecimal (00 to FF).
+Example:
+
+color: #ff0000; /* Pure Red */
+
+4. HEXA (Hexadecimal with Alpha)
+--------------------------------
+Similar to HEX but includes an alpha channel (#RRGGBBAA).
+Example:
+
+color: #ff000080; /* Red with 50% transparency */
+
+5. HSL (Hue, Saturation, Lightness)
+-----------------------------------
+Hue: Color type (0°–360°).
+Saturation: Intensity of the color (0%–100%).
+Lightness: Brightness level (0%–100%).
+Example:
+
+color: hsl(0, 100%, 50%); /* Pure Red */
+
+6. HSLA (Hue, Saturation, Lightness, Alpha)
+-------------------------------------------
+Same as HSL but includes an alpha channel (0 to 1) for transparency.
+Example:
+
+color: hsla(0, 100%, 50%, 0.5); /* Red with 50% transparency */
+
+7. HSV (Hue, Saturation, Value) / HSB (Hue, Saturation, Brightness)
+-------------------------------------------------------------------
+Similar to HSL but instead of Lightness, it uses Value (Brightness).
+Example (not directly supported in CSS but used in color pickers, software, etc.):
+
+HSV(0, 100%, 100%) /* Pure Red */
+
+8. CMYK (Cyan, Magenta, Yellow, Black)
+--------------------------------------
+Used in printing instead of digital screens.
+Values range from 0% to 100%.
+Example (not used in CSS but in design software like Photoshop):
+
+CMYK(0%, 100%, 100%, 0%) /* Pure Red */
+
+9. Named Colors
+---------------
+CSS provides 147 predefined color names.
+Example:
+color: red;
+color: blue;
+color: lime;
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-colors</title>
+    <style>
+        .box{
+            border: 1px solid;
+            height: 100px;
+            /* color name */
+            background-color: gray;
+
+            /* 0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f */
+            /* hexa color code using 3char */
+            background-color: #000;
+            background-color: #fff;
+            /* hexa color code using 6char (R-ff, G-ff, B-ff)*/
+            background-color: #0000ff;
+            /* rgb color code (R, G, B) */
+            background-color: rgb(0,0,0);
+            background-color: rgb(0,255,255);
+            background-color: rgb(255,255,0);
+            background-color: rgba(255, 0, 0, 0.1);
+            background-color: rgba(255, 0, 0, 0.2);
+            background-color: rgba(255, 0, 0, 0.3);
+            background-color: rgba(255, 0, 0, 0.4);
+            background-color: rgba(255, 0, 0, 0.5);
+            background-color: rgba(255, 0, 0, 0.6);
+            background-color: rgba(255, 0, 0, 0.7);
+            background-color: rgba(255, 0, 0, 0.8);
+            background-color: rgba(255, 0, 0, 0.9);
+            background-color: rgba(255, 0, 0, 1);
+            /* hsl color code (H, S, L) */
+            background-color: hsl(0, 100%, 50%);
+            background-color: hsl(120, 100%, 50%);
+            background-color: hsl(240, 100%, 50%);
+            background-color: hsla(0, 100%, 50%, 0.5);
+            background-color: hsla(120, 100%, 50%, 0.5);
+            background-color: hsla(240, 100%, 50%, 0.5);
+            /* hsv color code (H, S, V) */
+            background-color: hsv(0, 100%, 100%);
+            background-color: hsv(120, 100%, 100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
+
