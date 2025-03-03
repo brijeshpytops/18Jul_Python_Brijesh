@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        input{
+            width: 200px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Register form</legend>
+        <form action="" method="" enctype="multipart/form-data">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="xyz" value="brijesh07" required disabled>
+            <br><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="brijesh@gmail.com" value="brijesh@gmail.com" required>
+            <br><br>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="********" required>
+            <br><br>
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="********" required>
+            <br><br>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" value="2000-01-01" required>
+            <br><br>
+
+            <label for="time">Time</label>
+            <input type="time" id="time" name="time" value="11:00" required>
+            <br><br>
+
+            <label for="gender">Gender</label>
+            <input type="radio" id="male" name="gender" value="male" checked>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <br><br>
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+            </select>
+            <br><br>
+            <label for="hobbies">Hobbies</label>
+            <input type="checkbox" id="hobby1" name="hobbies[]" value="reading">
+            <label for="hobby1">Reading</label>
+            <input type="checkbox" id="hobby2" name="hobbies[]" value="painting">
+            <label for="hobby2">Painting</label>
+            <input type="checkbox" id="hobby3" name="hobbies[]" value="cooking">
+            <label for="hobby3">Cooking</label>
+            <br><br>
+
+            <label for="file">Upload Profile Picture</label>
+            <input type="file" id="file" name="file" accept="image/*" required>
+            <br><br>
+
+            <label for="color">Color</label>
+            <input type="color" id="color" name="color" value="#00ff00">
+            <br><br>
+
+            <label for="local-time">Local time</label>
+            <input type="datetime-local" id="local-time" name="local-time" value="2022-07-18T17:30:00">
+            <br><br>
+
+            <label for="number">Number</label>
+            <input type="number" id="number" name="number" min="1" max="100" step="5">
+            <br><br>
+
+            <label for="range">Range</label>
+            <input type="range" id="range" name="range" min="0" max="100" value="50">
+            <br><br>
+
+            <label for="week">Week</label>
+            <input type="week" id="week" name="week" value="2022-W42">
+            <br><br>
+
+            <label for="month">Month</label>
+            <input type="month" id="month" name="month" value="2022-07">
+
+            <br><br>
+            <label for="search">Search</label>
+            <input type="search" id="search" name="search" placeholder="Search something...">
+
+
+            <br><br>
+            <!-- text area for address| description -->
+             <label for="textarea">Address</label>
+             <textarea id="textarea" name="textarea" rows="4" cols="30">Enter your address here...</textarea>
+            
+            <br><br>
+
+            <!-- data list -->
+             <label for="datalist">Favorite color</label>
+             <input type="text" id="datalist" name="datalist" list="colors">
+             <datalist id="colors">
+                 <option value="red"></option>
+                 <option value="blue"></option>
+                 <option value="green"></option>
+             </datalist>
+
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Login form</legend>
+    </fieldset>
+</body>
+</html>
