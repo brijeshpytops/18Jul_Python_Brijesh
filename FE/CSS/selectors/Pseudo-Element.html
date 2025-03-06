@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* p:hover {
+            color:red;
+        } */
+
+        /* p::first-letter {
+            color: red;
+            font-size: 32px;
+            font-family: cursive;
+        } */
+        /* p::first-line{
+            color: red;
+            font-size: 32px;
+            font-family: cursive;
+        } */
+
+        /* h1::before {
+            content: '>';
+        }
+        h1::after {
+            content: ">>";
+        } */
+
+        /* img::before{
+            border: 1px solid violet;
+            border-radius: 50%;
+        }
+        img::after{
+            border: 1px solid violet;
+            border-radius: 50%;
+        } */
+
+        .image-wrapper {
+            position: relative;
+            display: inline-block;
+            padding: 10px; /* Adjust spacing */
+        }
+
+        .image-wrapper::before,
+        .image-wrapper::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 2px solid violet;
+            border-radius: 50%;
+            box-sizing: border-box;
+        }
+
+        .image-wrapper::after {
+            transform: scale(1.1); /* Outer border effect */
+        }
+
+        img {
+            display: block;
+            border-radius: 50%; /* Apply circular shape to the image */
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-wrapper">
+        <img src="https://img.freepik.com/free-vector/colorful-bird-illustration-gradient_343694-1741.jpg?t=st=1741240432~exp=1741244032~hmac=600bfdae3a2838d1c012147e2b50f7c48017141fd87f909a044df746f12d1ade&w=740" alt="" height="200px">
+    </div>
+
+    <!-- <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, deserunt incidunt! Repudiandae quibusdam reiciendis ipsum beatae eaque amet ab at excepturi aut perspiciatis necessitatibus adipisci atque, dolores recusandae esse, accusantium nulla? Repellat deserunt sit corporis animi eligendi dolore, sequi, voluptates quisquam doloribus eum quod cupiditate sed consequuntur voluptatibus, consectetur nisi?</p> -->
+</body>
+</html>
