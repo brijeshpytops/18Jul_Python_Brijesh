@@ -1,0 +1,34 @@
+CSS units define measurements for properties like width, height, margin, padding, and font size. There are two main types of CSS units:
+
+1. Absolute Units
+These units have a fixed size and do not change based on screen size or resolution.
+
+px (pixels) → width: 200px;
+cm (centimeters) → width: 5cm;
+mm (millimeters) → width: 10mm;
+in (inches) → width: 2in; (1 inch = 96px)
+pt (points) → font-size: 12pt; (1pt = 1/72 inch)
+pc (picas) → font-size: 2pc; (1pc = 12pt)
+2. Relative Units
+These units are flexible and adapt based on the parent element or viewport.
+
+a) Relative to Font Size
+em → Relative to the parent element's font size.
+font-size: 2em; (Twice the parent font size)
+rem → Relative to the root element (html { font-size: 16px; })
+font-size: 2rem; (Twice the root font size)
+b) Relative to Viewport
+vw (viewport width) → Percentage of the viewport width.
+width: 50vw; (50% of the screen width)
+vh (viewport height) → Percentage of the viewport height.
+height: 100vh; (Full height of the screen)
+vmin → Based on the smaller dimension (width or height).
+vmax → Based on the larger dimension (width or height).
+c) Relative to Parent & Content
+% (percentage) → Relative to the parent element.
+width: 50%; (50% of the parent container)
+ex → Relative to the height of the lowercase "x" of the font.
+ch → Relative to the width of the "0" character in the font.
+d) Relative to Line Heights
+lh → Relative to the current element’s line height.
+margin-bottom: 2lh; (Twice the line height)
