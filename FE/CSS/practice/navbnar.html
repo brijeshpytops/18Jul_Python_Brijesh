@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+            padding: 0px 20px;
+        }
+        .tphdr_left img {
+            height: 70px;
+        }
+        .tphdr_middle > ul  {
+            display: flex;
+        }
+        .tphdr_middle > ul > li {
+            margin-right: 15px;
+        }
+        .tphdr_middle > ul > li:hover {
+            border-bottom: 1px solid black;
+        }
+        .tphdr_middle > ul > li > a {
+            font-size: 24px;
+            color: black;
+        }
+        .tphdr_right {
+            display: flex;
+            align-items: center;
+        }
+        form {
+            display: flex;
+            align-items: center;
+        }
+        input[type="text"] {
+            width: 200px;
+            padding: 8px;
+            border-radius: 4px;
+        }
+        button {
+            padding: 8px 12px;
+            border: none;
+            cursor: pointer;
+            background-color: #000;
+            color: white;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="tphdr_left">
+            <img src="https://witzcode.pythonanywhere.com/static/web/images/logo_.png" alt="">
+        </div>
+        <div class="tphdr_middle">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="tphdr_right">
+            <form action="">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+</body>
+</html>
