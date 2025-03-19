@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box {
+            height: 50vh;
+            width: 100%;
+            border: 1px solid;
+        }
+        /* mobile */
+        @media (max-width: 576px) {
+            .box {
+                background-color: black;
+            }
+        }
+        /* tablets */
+        @media (min-width: 577px) and (max-width: 768px) {
+            .box {
+                background-color: red;
+            }
+        }
+        /* small laptops */
+        @media (min-width: 769px) and (max-width: 992px) {
+            .box {
+                background-color: blue;
+            }
+        }
+        /* desktops */
+        @media (min-width: 993px) and (max-width: 1200px) {
+            .box {
+                background-color: yellow;
+            }
+        }
+        /* large screen */
+        @media (min-width: 1201px){
+            .box {
+                background-color: pink;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
