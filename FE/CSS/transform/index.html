@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            height: 400px;
+            width: 400px;
+            background-color: teal;
+            margin: 100px auto;
+        }
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: bisque;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* scale | translate | rotate | skew */
+            /* transform: scale(2);
+            transform: scaleX(2);
+            transform: scaleY(2);
+            transform: scaleZ(2); */
+            /* scale3d(sx, sy, sz) */
+            /* transform: scale3d(1.5, 1.5, -1.5); */
+            /* transform-origin: top left; */
+            /* transform-origin: -50px -50px; */
+            /* transform:scale(2); */
+
+            /* transform: translateX(100px);
+            transform: translateY(100px);
+            transform: translateZ(100px); */
+            /* translate3d(tx, ty, tz) */
+            /* transform: translate3d(50px, 50px, 0); */
+
+            /* transform: rotateX(45deg);
+            transform: rotateX(180deg);
+            transform: rotateY(180deg);
+            transform: rotateZ(180deg); */
+            
+            /* rotate3d(x, y, z, a) */
+            /* transform: rotate3d(); */
+            /* https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d */
+
+            /* transform: skew(45deg, 90deg); */
+            /* transform: skewX(80deg);
+            transform: skewY(80deg); */
+            /* transform-origin: 20px 20px; */
+            transition-property:background-color,border-radius, transform;
+            transition-duration: 1s;
+            transition-timing-function: steps(8, center);
+            transition-delay:.3s;
+            /* transition: all 2s ease-in; */
+            /* transition: all 2s ease-in-out; */
+            /* transition: all 2s cubic-bezier(1, 0.01, 0, 1.6); */
+            /* transition: all 1s steps(8, start); */
+
+        }
+        .box:hover{
+            transform: rotate(90deg);
+            border-radius: 50%;
+            background-color: brown;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Box</h1>
+        </div>
+    </div>
+</body>
+</html>
