@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega menus</title>
+    <style>
+        :root {
+            --green1: #27445D;
+            --green2: #497D74;
+            --green3: #71BBB2;
+            --gray: #EFE9D5;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .navbar {
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 80px;
+            height: 80px;
+        }
+
+        .tpheader__logo {
+            flex-grow: 1;
+            font-size: 2em;
+        }
+
+        .tpheader__logo>h3 {
+            color: var(--green2);
+        }
+
+        .tpheader__logo>h3::first-letter {
+            font-size: 2em;
+            color: #000;
+        }
+
+        .tpheader__menus {
+            flex-grow: 2;
+            height: 100%;
+            display: flex;
+            align-items: stretch;
+            justify-content: end;
+        }
+
+        .tpheader__menus>ul {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
+
+        .tpheader__menus>ul>li {
+            margin-right: 24px;
+            position: relative;
+            
+        }
+
+        .tpheader__menus>ul>li>a {
+            font-size: 2em;
+            color: var(--green2);
+            
+        }
+
+        .dropdown__menu {
+            border: 1px solid var(--green1);
+            width:100%;
+            padding: 20px;
+            position: absolute;
+            top: 100%;
+            left: 5%;
+            display: none;
+            border-radius: 0px 0px 15px 15px;
+        }
+
+        .tpheader__menus>ul>li:hover > .dropdown__menu {
+            display: block;
+            
+            
+        }
+        .dropdown__menu > ul > li {
+            margin-bottom: 10px;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+
+
+        @media (max-width: 576px){
+            .tpheader__menus {
+                display: none;
+            }
+        }
+
+        @media (min-width:577px) and (max-width: 768px){
+            .tpheader__menus {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="navbar" id="navbar">
+        <div class="tpheader__logo">
+            <h3>Logo.</h3>
+        </div>
+        <div class="tpheader__menus">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Services</a>
+                    <div class="dropdown__menu">
+                        <ul class="dropdown__ul">
+                            <li><a href="">Service 1</a></li>
+                            <li><a href="">Service 2</a></li>
+                            <li><a href="">Service 3</a></li>
+                            <li><a href="">Service 4</a></li>
+                            <li><a href="">Service 5</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>
