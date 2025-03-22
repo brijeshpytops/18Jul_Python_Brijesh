@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            counter-reset: one;
+
+        }
+        li{
+            list-style: none;
+        }
+        .one > li::before  {
+            counter-increment: one;
+            content: 'Module ' counter(one) ": ";
+        }
+        .two {
+            counter-reset: two;
+        }
+        .two > li::before {
+            counter-increment: two;
+            content: counter(one)"."counter(two) ": ";
+        }
+
+        .three {
+            counter-reset: three;
+        }
+       .three > li::before {
+            counter-increment: three;
+            content: counter(one)"."counter(two)"."counter(three) ": ";
+        }
+        .four {
+            counter-reset: four;
+        }
+        .four > li::before {
+            counter-increment: four;
+            content: counter(one)"."counter(two)"."counter(three)"."counter(four) ": ";
+        }
+       
+
+
+    </style>
+</head>
+<body>
+    <ul class="one">
+        <li>python programming
+            <ul class="two">
+                <li>basics</li>
+                <li>data structures</li>
+                <li>algorithms</li>
+                <li>object-oriented programming
+                    <ul class="three">
+                        <li>classes</li>
+                        <li>inheritance</li>
+                        <li>polymorphism</li>
+                        <li>abstraction</li>
+                        <li>encapsulation</li>
+                        <li>interfaces</li>
+                        <li>data abstraction</li>
+                        <li>object-oriented design</li>
+                    </ul>
+                </li>
+                <li>web development</li>
+                <li>database management</li>
+                <li>networking</li>
+                <li>testing</li>
+                <li>software engineering</li>
+                <li>version control</li>
+                <li>machine learning</li>
+                <li>deep learning</li>
+                <li>artificial intelligence</li>
+                <li>natural language processing</li>
+                <li>computer vision</li>
+                <li>robotics</li>
+                <li>game development</li>
+                <li>blockchain</li>
+                <li>quantum computing</li>
+                <li>artificial intelligence</li>
+                <li>machine learning</li>
+                <li>deep learning</li>
+            </ul>
+        </li>
+        <li>java programming
+            <ul class="two">
+                <li>basics</li>
+                <li>data structures</li>
+                <li>algorithms</li>
+                <li>object-oriented programming
+                    <ul class="three">
+                        <li>classes</li>
+                        <li>inheritance</li>
+                        <li>polymorphism
+                            <ul class="four">
+                                <li>method overriding</li>
+                                <li>method overloading</li>
+                            </ul>
+                        </li>
+                        <li>abstraction</li>
+                        <li>encapsulation</li>
+                        <li>interfaces</li>
+                        <li>data abstraction</li>
+                        <li>object-oriented design</li>
+                    </ul>
+                </li>
+                <li>web development</li>
+                <li>database management</li>
+                <li>networking</li>
+                <li>testing</li>
+                <li>software engineering</li>
+                <li>version control</li>
+                <li>machine learning</li>
+                <li>deep learning</li>
+            </ul>
+        </li>
+        <li>javascript programming</li>
+        <li>ruby programming</li>
+        <li>c programming</li>
+        <li>php programming</li>
+        <li>swift programming</li>
+        <li>go programming</li>
+        <li>assembly programming</li>
+        <li>rust programming</li>
+    </ul>
+</body>
+</html>
