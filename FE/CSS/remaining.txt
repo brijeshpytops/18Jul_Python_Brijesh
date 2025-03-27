@@ -1,10 +1,6 @@
-Cursor, 
-Font Awesome Icons
-Font Family Through Google Font , import fontface rule
-caption-side
+
 clip
 content
- letter-spacing
  page-break
  quotes
   Practical Example: wireframe layout for your template using div
