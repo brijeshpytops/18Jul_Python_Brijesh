@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content</title>
+    <style>
+        h1::before{
+            content: '*';
+            height: 20px;
+            width: 20px;
+            font-size: 20px;
+            background-color: brown;
+            border-radius: 50%;
+        }
+        h1::after{
+            content: '*';
+            height: 20px;
+            width: 20px;
+            font-size: 20px;
+            background-color: brown;
+            border-radius: 50%;
+        }
+
+        blockquote, q {
+  quotes: "«" "»" "‘" "’"; /* Custom quotation marks for block and inline quotes */
+}
+    </style>
+</head>
+<body>
+    <!-- <h1>Lorem ipsum dolor sit amet.</h1> -->
+
+    <blockquote>
+        This is a blockquote. It will have custom quotation marks around it.
+    </blockquote>
+
+    <p>
+        Here is some text with <q>inline quotes</q> that will also have custom quotation marks.
+    </p>
+</body>
+</html>

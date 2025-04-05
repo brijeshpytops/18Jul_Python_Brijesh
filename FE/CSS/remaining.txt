@@ -1,9 +1,2 @@
-
-clip
-content
- page-break
- quotes
-  Practical Example: wireframe layout for your template using div
-   Validate a Website, Hosting a website with free domain name, Column , Clippath , Gradient Color ,
- Filter, Border Image
+Hosting a website with free domain name
  
